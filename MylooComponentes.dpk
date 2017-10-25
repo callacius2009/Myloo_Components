@@ -1,0 +1,82 @@
+package MylooComponentes;
+
+{$R *.res}
+{$R 'MylooComponentes.res'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  designide,
+  vcl,
+  vclactnband,
+  vclx,
+  xmlrtl,
+  dbrtl,
+  vcldb,
+  dsnap,
+  DbxCommonDriver,
+  dbexpress,
+  IndyCore,
+  IndySystem,
+  {DBXFirebirdDriver,}
+  soaprtl,
+  ZComponent,
+  ZParseSql,
+  ZCore,
+  ZDbc,
+  ZPlain;
+
+contains
+  DBDataComboZeos in 'Source\DBDataComboZeos.pas',
+  Myloo.Comp.Coll.Bags in 'Lib\Myloo.Comp.Coll.Bags.pas',
+  Myloo.Comp.Coll.Base in 'Lib\Myloo.Comp.Coll.Base.pas',
+  Myloo.Comp.Coll.BidiDictionaries in 'Lib\Myloo.Comp.Coll.BidiDictionaries.pas',
+  Myloo.Comp.Coll.BidiMaps in 'Lib\Myloo.Comp.Coll.BidiMaps.pas',
+  Myloo.Comp.Coll.Dictionaries in 'Lib\Myloo.Comp.Coll.Dictionaries.pas',
+  Myloo.Comp.Coll.Dynamic in 'Lib\Myloo.Comp.Coll.Dynamic.pas',
+  Myloo.Comp.Coll.Lists in 'Lib\Myloo.Comp.Coll.Lists.pas',
+  Myloo.Comp.Coll.MultiMaps in 'Lib\Myloo.Comp.Coll.MultiMaps.pas',
+  Myloo.Comp.Coll.Queues in 'Lib\Myloo.Comp.Coll.Queues.pas',
+  Myloo.Comp.Coll.Serialization in 'Lib\Myloo.Comp.Coll.Serialization.pas',
+  Myloo.Comp.Coll.Sets in 'Lib\Myloo.Comp.Coll.Sets.pas',
+  Myloo.Comp.Coll.Stacks in 'Lib\Myloo.Comp.Coll.Stacks.pas',
+  Myloo.Comp.Coll.Utils in 'Lib\Myloo.Comp.Coll.Utils.pas',
+  Myloo.Comp.Delegates in 'Lib\Myloo.Comp.Delegates.pas',
+  Myloo.Comp.Rapid in 'Lib\Myloo.Comp.Rapid.pas',
+  Myloo.Phonetic.BuscaBR in 'Lib\Myloo.Phonetic.BuscaBR.pas',
+  Myloo.Phonetic.Interfaces in 'Lib\Myloo.Phonetic.Interfaces.pas',
+  Myloo.Phonetic.Metaphone in 'Lib\Myloo.Phonetic.Metaphone.pas',
+  Myloo.Phonetic.Soundex in 'Lib\Myloo.Phonetic.Soundex.pas',
+  Myloo.Phonetic.Utils in 'Lib\Myloo.Phonetic.Utils.pas',
+  Myloo.Patterns.Singleton in 'Lib\Myloo.Patterns.Singleton.pas',
+  Myloo.Strings.Utils in 'Lib\Myloo.Strings.Utils.pas',
+  DataComboDbx in 'Source\DataComboDbx.pas',
+  DataComboZeos in 'Source\DataComboZeos.pas',
+  DBDataComboDBX in 'Source\DBDataComboDBX.pas',
+  MylooComp.Reg in 'Source\MylooComp.Reg.pas';
+
+end.
